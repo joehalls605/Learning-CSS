@@ -1,0 +1,34 @@
+/*
+Cascading Style Sheets is used to style HTML elements. The basic syntax involves rules, selectors, properties and values.
+
+A CSS rule consists of a selector (which identifies the HTML element) and a set of propertis which define how an element should be styled.
+*/
+
+/* Selector: Target all <p> elements */
+p {
+    color: blue; /* Property: Set text color to blue */
+}
+
+/*An element selector targets specific HTML elements */
+h1{
+    color: green;
+}
+
+/* Other types of selector:
+
+Element Selector: Targets specific HTML elements (e.g., p, h1, div).
+
+Class Selector: Targets elements with a specific class attribute (e.g., .my-class).
+
+ID Selector: Targets a unique element with a specific ID (e.g., #my-id).
+
+Attribute Selector: Targets elements based on their attributes (e.g., [type="submit"]).
+
+Pseudo-classes: Select elements based on their state (e.g., :hover, :focus).
+
+Pseudo-elements: Style specific parts of an element (e.g., ::before, ::after).
+
+Specificity and Inheritance:
+Specificity: Determines which styles take precedence when multiple rules apply to the same element. Specificity is based on selector types and order.
+Inheritance: Some properties (like font-family and color) are inherited by child elements from their parent. Others (like margin and padding) are not.
+*/

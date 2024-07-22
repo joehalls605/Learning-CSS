@@ -1,0 +1,41 @@
+/* Text styling*/
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #fff;
+}
+
+p{ /* Used to align text within an element*/
+    text-align: center;
+}
+
+div{
+    background-color: aliceblue;
+}
+
+.hero{
+    background-image: url("path/to/image.jpg");
+}
+
+.gradient-bg{
+    background: linear-gradient(to right, #fff, #ffa7ff);
+}
+
+.box{
+    border: 2px solid #333;
+}
+
+.highlight{
+    outline: 2px dashed green;
+}
+
+.content{
+    margin:10px;
+}
+
+.inner-box{
+    padding: 20px;
+}

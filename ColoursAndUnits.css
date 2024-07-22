@@ -1,0 +1,85 @@
+/*
+Hexadecimal colour codes represent colours using a combination of six characters 0-9, and A-F.
+*/
+
+p {
+    color: #FF5733;
+}
+
+/*
+RGB values define colors by specifying the intensity of red, green, and blue. For instance, rgb(134, 131, 213) creates a lavender shade.
+*/
+
+h1 {
+    color: rgb(134, 131, 213);
+}
+
+
+/*
+RGBA includes an additional alpha channel for transparency. Example: rgba(134, 131, 213, 0.8) with 80% opacity.
+*/
+
+.transparent-bg {
+    background-color: rgba(134, 131, 213, 0.8);
+}
+
+/*
+HSLA (HSL with Alpha). Similar to RGBA, HSLA adds transparency.
+*/
+
+.semi-transparent {
+    background-color: hsla(242, 49%, 67%, 0.8);
+}
+
+/*
+Units of measurement
+
+Pixels - Fixed size relative to the screen. Commonly used for font sizes and dimensions. Always the same size, where ever it is defined. 
+*/
+p {
+    font-size: 16px;
+    margin: 10px;
+}
+
+/*
+Percentage - Calculated based on size of the parent element. 
+*/
+.container {
+    width: 80%; /* 80% of the parent's width */
+    margin-top: 5%; /* 5% of the parent's height as top margin */
+    font-size: 120%; /* 120% of the default font size */
+}
+
+
+/*
+em - Relative to the font size of the parent element. Useful for scalable layouts
+*/
+.child {
+    margin: 1em;
+}
+
+/*
+rem - Relative to the font size of the root (usually the <html> element). Great for consistent scaling
+*/
+html {
+    font-size: 1.2rem;
+}
+
+/*
+vw - Relative to 1% of the viewport width (browser window). Useful for responsive designs
+*/
+.responsive {
+    width: 50vw;
+}
+
+/*
+vh - Relative to 1% of the viewport height. Handy for vertical responsiveness
+*/
+.vertical-space {
+    height: 30vh;
+}
+
+
+
+
+
