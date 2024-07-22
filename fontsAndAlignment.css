@@ -1,0 +1,50 @@
+/*
+Text styling
+*/
+
+.font-family{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-size{
+    font-size: 20px;
+}
+
+.font-weight{
+    font-weight: bold;
+}
+
+.font-style{
+    font-style: italic;
+}
+
+.text-color{
+    color: #fff;
+}
+
+/*
+Text alignment
+*/
+
+/*
+Aligns the text to the left side of its container
+*/
+.text-align-left{
+    text-align: left;
+}
+
+
+/*
+Centers the text horizontally within its container.
+*/
+.text-align-center{
+    text-align: center;
+}
+
+/*
+Stretches the lines of text so that each line has equal width, aligning the text evenly along both the left and right edges of the container. This is often used in newspapers and books for a clean, block-like appearance.
+*/
+
+.text-align-justify{
+    text-align: justify;
+}

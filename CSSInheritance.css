@@ -1,0 +1,54 @@
+/*
+CSS Inheritance refers to the way some CSS properties are passed from parent elements to their children.
+Not all properties are inherited. Properties related to text and fonts, such as color, font family are inherited.
+But properties like margin, padding, and border are not.
+
+By using inherit, you can force ineritance using the inherit keyword.
+For example:
+color:inherit makes the child element inherit the colour property from its parent.
+*/
+
+.parent{
+    color:blue;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.child{
+    color: red; /* This will be overridden */
+    font-size:18px;  /* This will be overridden */
+    margin:10px; /* This will be overridden */
+}
+
+.child-inherit {
+    color:inherit;
+    font-size: inherit;
+}
+
+/*
+  <div class="parent">
+        Parent Element
+        <div class="child child-inherit">Child with Inherit</div>
+        <div class="child child-initial">Child with Initial</div>
+        <div class="child child-unset">Child with Unset</div>
+    </div>
+*/
+
+/*
+Resets the property to its default value defined by the browser.
+*/
+.child-initial {
+    color: initial;
+    font-size: initial;
+    margin: initial;
+}
+
+/*
+For inheritable properties (like color and font-size), unset behaves like inherit. It makes the property inherit the value from its parent element.
+For non-inheritable properties (like margin and display): unset behaves like initial. It resets the property to its initial, browser-defined value.
+*/
+.child-unset {
+    color: unset;
+    font-size: unset;
+    margin: unset;
+}

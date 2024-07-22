@@ -1,0 +1,31 @@
+/*
+Borders can be styled in various ways, including different widths, styles, and colours.
+*/
+
+.solid-border{
+    border: 2px solid black;
+}
+
+.dashed-border{
+    border:2px dashed green;
+}
+
+.dotted-border{
+    border:2px dotted blue;
+}
+
+.double-border{
+    border: 4px double red;
+}
+
+/*
+Outlines are also used:
+*/
+
+.solid-outline{
+    outline: 2px solid black;
+}
+
+.dashed-outline{
+    outline: 2px dashed green;
+}
