@@ -1,0 +1,60 @@
+/*
+Static positioning
+Static positioning is the default position for HTML elements.
+Elements are positioned according to the normal flow of the page.
+The top, bottom, left, and right properties have no effect.
+*/
+
+div.static{
+    position: static;
+}
+
+/*
+Relative Positioning
+Positioned relative to its normal position. It means that the element’s position is adjusted based on its original position in the normal flow of the document. 
+Adjusted using top, right, bottom, and left properties.
+Other content doesn’t adjust to fill gaps left by the element.
+*/
+
+div.relative {
+    position: relative;
+    left: 30px;
+  }
+
+/*
+Fixed Positioning
+Positioned relative to the viewport (stays in the same place even when scrolled).
+Use top, right, bottom, and left properties.
+Doesn’t leave a gap in the page.
+*/
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+/*
+Absolute Positioning
+Positioned relative to the nearest positioned ancestor (or the initial containing block if none).
+Removed from the normal flow, can overlap other elements.
+Doesn’t leave a gap in the page.
+*/
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
+  
+
+/*
+Absolute Positioning
+Based on user’s scroll position.
+Toggles between relative and fixed.
+“Sticks” in place after a certain offset.
+*/
+
+div.sticky {
+    position: sticky;
+  }

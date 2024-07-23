@@ -1,0 +1,18 @@
+html{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box-one{
+    background-color: burlywood;
+    border: 0 solid black;
+    padding: 20px;
+    border: 20px solid purple;
+    margin: 20px;
+}   
+
+.box-two{
+    background-color: cadetblue;
+    border: 0 solid black;
+}

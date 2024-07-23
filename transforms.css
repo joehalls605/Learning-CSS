@@ -1,0 +1,35 @@
+/*
+CSS transforms allow you to manipulate the coordinate space of an element, enabling you to rotate, scale, skew, or translate elements. 
+*/
+
+.rotate{
+    transform: rotate(45deg);
+}
+
+.scale{
+    transform: scale(1.5); /* Scales the element to 1.5 times its original size */
+}
+
+.skew{
+    transform: skew(20deg, 10deg); /* Skews the element 20 degrees along the X-axis and 10 degrees along the Y-axis */
+}
+
+.translate {
+    transform: translate(50px, 100px); /* Moves the element 50px to the right and 100px down */
+}
+
+/* Combining transforms */
+
+.combine-transform {
+    transform: rotate(30deg) scale(1.2) translate(20px, 30px); /* Rotates, scales, and translates the element */
+}
+
+/* 3D transform */
+
+.rotate-x {
+    transform: rotateX(45deg); /* Rotates the element 45 degrees around the X-axis */
+}
+
+
+
+
