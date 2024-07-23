@@ -49,7 +49,7 @@ div.absolute {
   
 
 /*
-Absolute Positioning
+Sticky Positioning
 Based on user’s scroll position.
 Toggles between relative and fixed.
 “Sticks” in place after a certain offset.
