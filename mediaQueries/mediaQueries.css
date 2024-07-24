@@ -1,0 +1,33 @@
+/*
+Media queries are a CSS technique that allows you to apply different styles to a webpage based on the characteristics of the device or browser viewing it, particularly the screen size. They're a key component of responsive web design, enabling websites to adapt their layout and appearance across various devices like desktops, tablets, and smartphones.
+*/
+
+/*
+This media query applies styles when the screen width is 600 pixels or less.
+*/
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+/*
+It is also possible to use combine conditions
+*/
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+/* 
+Device orientation can also be targeted
+*/
+
+@media screen and (orientation: landscape) {
+    .sidebar {
+      float: left;
+      width: 30%;
+    }
+  }

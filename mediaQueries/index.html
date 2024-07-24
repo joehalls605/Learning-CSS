@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header, main, aside {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+        }
+        .no-print {
+            background-color: #ffdddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Default styles for larger screens */
+        main {
+            width: 70%;
+            float: left;
+        }
+        aside {
+            width: 25%;
+            float: right;
+        }
+
+        /* Media query for screens 900px and below */
+        @media screen and (max-width: 900px) {
+            body {
+                background-color: #e6f3ff;
+            }
+            main, aside {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        /* Media query for screens 600px and below */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: #ffe6e6;
+                font-size: 14px;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+
+        /* Media query for landscape orientation */
+        @media screen and (orientation: landscape) {
+            body::after {
+                content: "Landscape Mode";
+                display: block;
+                text-align: center;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Media Query Example</h1>
+        </header>
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area. It will adjust its layout based on the screen size.</p>
+            <p>Try resizing your browser window to see how the layout changes!</p>
+        </main>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is a sidebar. On smaller screens, it will move below the main content.</p>
+        </aside>
+    </div>
+</body>
+</html>
