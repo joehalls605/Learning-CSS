@@ -1,0 +1,90 @@
+/*
+Flexbox, short for "Flexible Box Layout," is a CSS layout module designed to create more efficient and predictable layouts for complex web applications. Flexbox makes it easy to align and distribute space among items in a container, even when their size is unknown or dynamic.
+
+Basic Concepts
+Flex Container: The parent element with display: flex; or display: inline-flex;. It defines a flex context for its direct children (flex items).
+Flex Items: The direct children of a flex container. These items can be controlled using various flex properties.
+*/
+
+/*
+Container Properties
+
+display: flex;: Defines a block-level flex container.
+*/
+.container{
+    display: flex;
+}
+
+/*
+display: inline-flex;: Defines an inline-level flex container.
+*/
+
+.container{
+    display: inline-flex; /*  makes an element behave like an inline element (flowing within text and taking only the necessary space), while its children are laid out using flexbox rules, allowing for flexible and efficient alignment and distribution of those child elements.*/
+}
+
+/*
+flex-direction
+*/
+
+.container{
+    flex-direction: row; /* Lays out items in a horizontal row*/
+    flex-direction: row-reverse;  /*Lays out items in a horizontal row but in reverse order*/
+    flex-direction: column;  /*Lays out items in a vertical column.*/
+    flex-direction: column-reverse;  /*Lays out items in a vertical column but in reverse order.*/
+}
+
+.container{
+    flex-wrap: nowrap; /*  All flex items will be on a single line. */
+    flex-wrap: wrap; /* Flex items will wrap onto multiple lines. */
+    flex-wrap: wrap-reverse; /* Flex items will wrap onto multiple lines in reverse order. */
+}
+
+
+.container{
+    justify-content: flex-start; /*  Items are packed toward the start of the flex container. */
+    justify-content: flex-end; /*  Items are packed toward the end of the flex container. */
+    justify-content: center; /* Items are centered along the main axis.*/
+    justify-content: space-between; /* Items are centered along the main axis.*/
+    justify-content: space-around; /*  Items are evenly distributed with equal space around them.*/
+    justify-content: space-evenly; /* IItems are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
+
+}
+
+.container{
+   align-items: stretch; /* Items stretch to fill the container. */
+   align-items: flex-start; /* Items are aligned toward the start of the cross axis */
+   align-items: flex-end; /*  Items are aligned toward the end of the cross axis. */
+   align-items: center; /*  Items are centered along the cross axis. */
+   align-items: baseline; /*   Items are aligned along their baseline. (imaginary line in which most characters sit) */
+}
+
+.container{
+    align-content: stretch; /* Items stretch to fill the container. */
+    align-content: flex-start; /*  Lines are packed toward the start of the flex container */
+    align-content: flex-end; /*  Lines are packed toward the end of the flex container. */
+    align-content: center; /*  Lines are centered in the flex container. */
+    align-content: space-between; /*  Lines are evenly distributed with the first line at the start and the last line at the end. */
+    align-content: space-around; /*  Lines are evenly distributed with equal space around them. */
+ }
+
+ /* Item properties */
+ .container{
+   order:2; /* Defines order in which item is displayed */
+   flex-grow: 0; /* Item will not grow to relative to the rest of flex items */
+   flex-shrink: 1; /* Item will shrink to prevent oveflow */
+   flex-basis: auto; /* The initial main size of the flex item */
+
+   align-self: auto; /* Inherits from the align items value of the parent container*/
+   align-self: flex-start; /* Aligns the item to the start of the cross axis*/
+   align-self: flex-end; /* Aligns the item to the end of the cross axis*/
+   align-self: center; /* Aligns the item along the center of the cross axis*/
+   align-self: baseline; /* Aligns item along the baseline*/
+   align-self: stretch; /* Stretches the item to fill the container.*/ 
+
+
+ }
+
+
+
+
