@@ -1,0 +1,104 @@
+/* Basic syntax, specificity, and inheritance */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto; /* auto: This sets the left and right margins to automatically take up the available space equally.  */
+    padding: 20px;
+    background-color: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2{
+    color: #333;
+    text-align: center;
+}
+
+.intro-text{
+    font-size: 1.2rem;
+    color:#666;
+    text-align: justify; /* the browser increases the space between words so that each line of text (except the last line of a paragraph) touches both the left and right margins of the containing element.*/
+}
+
+.text-styling .highlight{
+    font-weight: bold;
+    color: black;
+}
+
+.background-styling{
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    outline: 2px dashed #333;
+    background-color: green;
+}
+
+.spacing-styling{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: azure;
+    border: 1px solid #333;
+}
+
+.color-units{
+    font-size: 1rem;
+}
+
+.hex-color{
+    color:#333;
+}
+
+.rgb-color{
+    color: rgb(255, 87, 51);
+}
+
+.rgba-color{
+    color: rgba(255, 87, 51, 0.5);
+}
+
+.hsl-color{
+    color: hsl(9, 100%, 60%);
+}
+
+.hsla-color {
+    color: hsla(9, 100%, 60%, 0.5);
+  }
+
+.px-unit {
+    font-size: 16px;
+  }
+
+.em-unit{
+    font-size: 1.5em;
+}
+
+.rem-unit{
+    font-size: 1.5rem;
+}
+
+.percent-unit {
+    font-size: 120%;
+  }
+
+.vw-unit {
+    font-size: 5vw; /* If the viewport width is 1000 pixels, the font size will be 50 pixels (5% of 1000). */
+}
+.vh-unit {
+    font-size: 5vh;
+  }
+  
+  .box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+  }

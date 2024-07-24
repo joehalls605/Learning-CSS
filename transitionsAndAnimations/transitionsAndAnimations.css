@@ -1,0 +1,65 @@
+/*
+CSS Transitions and Animations are ways to add dynamic, smooth changes to elements on your web page
+
+Transitions allow you to change property values smoothly over a given duration. They're typically used for simple, one-step animations triggered by events like hovering
+
+Syntax:
+.element {
+    transition: property duration timing-function delay;
+}
+*/
+
+.button {
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+
+/* 
+Key frames can also be used. These are used to define the stages of an animation. They allow you to specify exactly how an element should look at various points during the animation.
+
+Keyframes are like a timeline for your animation.
+You use percentages (0% to 100%) to define different points in this timeline.
+At each percentage, you specify how the element should look or behave.
+*/
+
+@keyframes animationName {
+    0% { /* Starting state */ }
+    50% { /* Midway state */ }
+    100% { /* Ending state */ }
+}
+
+/* Example:*/
+
+@keyframes changeColor {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: blue; }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    animation: changeColor 4s linear infinite;
+}
+
+/* Another example that moves an element in a square pattern*/
+
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, 0); }
+    50% { transform: translate(100px, 100px); }
+    75% { transform: translate(0, 100px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* From (same as 0%) and to (100%) can also be used*/
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
