@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header{
+    background-color: aliceblue;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+main{
+    display: flex; /* creates a row of three columns*/
+    flex: 1; /* This makes the main content area flexible within the container, allowing it to grow and fill available space vertically. It ensures that the main content expands to push the footer to the bottom of the page when there's not enough content to fill the viewport.*/
+    padding: 1rem;
+}
+
+.column{
+    flex: 1; /* This distributes the horizontal space equally among the columns within the main element. It allows the columns to grow and shrink proportionally within the main content area.  */
+    background-color: azure;
+    margin: 0 0.5rem;
+    padding: 1rem;
+}
+
+footer{
+    background-color: bisque;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+
+    .column{
+        margin: 0.5rem 0;
+    }
+}

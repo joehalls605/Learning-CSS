@@ -1,0 +1,65 @@
+/*
+Breakpoints in CSS are specific pixel values that define where your layout should change to accommodate different screen sizes. They're a key component of responsive web design, allowing you to create websites that look good on all devices, from mobile phones to large desktop monitors.
+
+Here's a brief explanation of how breakpoints work:
+
+You define breakpoints using media queries in your CSS.
+At each breakpoint, you can specify different CSS rules to adjust your layout, font sizes, or other styles.
+When the screen width matches a breakpoint, the corresponding CSS rules are applied.
+*/
+
+/* Default styles for mobile */
+body {
+    font-size: 16px;
+  }
+  
+  /* Breakpoint for tablets and larger */
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Breakpoint for desktops */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  /*
+  What is the difference between media queries and breakpoints?
+
+  Media Queries:
+
+  Are a CSS technique to apply different styles based on various device characteristics.
+  Can check for things like screen width, height, orientation, resolution, and more.
+  Are the actual CSS code used to implement responsive design.
+  Syntax example: @media (min-width: 768px) { ... }
+
+  Breakpoints:
+
+  Are specific values (usually screen widths) at which your layout will change.
+  Are the points where you decide to alter your design to better fit the screen size.
+  Are a concept or strategy, not a CSS feature themselves.
+  Are implemented using media queries in your CSS.
+
+  Breakpoints and media queries are closely related concepts in responsive web design, but they're not exactly the same thing. Here's a breakdown of the differences:
+Media Queries:
+
+Are a CSS technique to apply different styles based on various device characteristics.
+Can check for things like screen width, height, orientation, resolution, and more.
+Are the actual CSS code used to implement responsive design.
+Syntax example: @media (min-width: 768px) { ... }
+
+Breakpoints:
+
+Are specific values (usually screen widths) at which your layout will change.
+Are the points where you decide to alter your design to better fit the screen size.
+Are a concept or strategy, not a CSS feature themselves.
+Are implemented using media queries in your CSS.
+
+In essence, breakpoints are the strategic points in your design where you want changes to occur, while media queries are the CSS mechanism you use to implement those changes at those breakpoints.
+For example, you might decide that your design needs to change at 768px (a breakpoint). You would then use a media query to apply new styles at that breakpoint.
+
+  */
