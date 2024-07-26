@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, main, footer{
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+header, footer{
+    background-color: aliceblue;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header{
+    position: relative;
+}
+
+nav {
+    position: sticky; /* CSS makes an element stick in place as you scroll down the page, but only after you’ve scrolled past it by a certain amount.*/
+    top: 0;
+    background-color: #333; 
+    color: #fff;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  main{
+    display: flex;
+  }
+
+  .content{
+    flex: 3; /* The item will grow to fill the avaialable space and up to three times as much of the remaining space*/
+    padding: 20px;
+  }
+
+  .sidebar{
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+  }
+
+  header::before{
+    content: "";
+    position: absolute; /* positions element relative to its nearest to parent element*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+footer p {
+    margin: 0;
+  }
+  
+  footer p:last-child {
+    margin-left: auto;
+  }
