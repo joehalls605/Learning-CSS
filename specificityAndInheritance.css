@@ -1,0 +1,70 @@
+/*
+CSS specificity is a system used by the browser to determine which CSS rule should be applied when multiple rules target the same element. Specificity is calculated based on the types of selectors used in the rule, and it essentially gives weight to certain selectors.
+
+Specificity Hierarchy
+
+Specificity is calculated by adding up values based on the following criteria:
+
+Inline styles: An inline style has the highest specificity and will override any other styles on the element. Example: <div style="color: red;">
+
+Specificity: 1000 (a high value).
+IDs: An ID selector is highly specific and is more specific than class, attribute, or element selectors. Example: #myElement
+
+Specificity: 100.
+Classes, attributes, and pseudo-classes: These are less specific than IDs but more specific than element selectors. Example: .myClass, [type="text"], :hover
+
+Specificity: 10.
+Element selectors and pseudo-elements: These have the lowest specificity. Example: div, p, ::before
+
+Specificity: 1.
+*/
+
+/* Specificity = 100 */
+#header {
+    color: blue;
+  }
+  
+  /* Specificity = 10 */
+  .section {
+    color: green;
+  }
+  
+  /* Specificity = 1 */
+  div {
+    color: red;
+  }
+
+/*
+If the element has the ID #header, it will be colored blue because the ID selector has a higher specificity than the class .section or the div element.
+
+CSS Inheritance
+
+Inheritance in CSS refers to the way certain styles are passed from parent elements to their child elements. Not all properties are inherited, but many common properties like color, font-family, and line-height are.
+
+
+*/
+body {
+    color: darkblue;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+
+/*
+In this example, all text inside the <body> will inherit the color: darkblue, and paragraphs <p> will inherit the font-family and font-size styles.
+
+Non-Inherited Properties: Properties like margin, padding, border, and background-color are not inherited. If you apply them to a parent element, the child elements will not automatically receive those styles.
+
+Some non-inherited properties can be made to inherit by using the inherit keyword in CSS.
+*/
+
+p {
+    background-color: inherit; /* Inherits the background color from the parent */
+  }
+  
+
+
+
+  
+
