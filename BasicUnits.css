@@ -1,0 +1,34 @@
+/*
+Pixels (px)
+Defines a fixed size in pixels.
+When to Use:
+- Fixed dimensions (e.g., icons, borders).
+- Text size for small elements (use em/rem for accessibility).
+- Exact-sized images.
+- Consistent spacing (margins, padding).
+*/
+p{
+    width: 200px;
+}
+/*
+Percentages (%)
+Specifies a size relative to the parent container.
+- Responsive layouts (fluid designs).
+- Proportional margins and padding.
+- Grid and Flexbox layouts.
+*/
+p{
+    width: 50%;
+}
+/*
+Viewport Units (vw, vh)
+Based on the browser’s viewport size:
+- vw: 1% of the viewport width.
+- vh: 1% of the viewport height.
+*/
+
+p{
+    width: 1vw;
+    height: 1vh;
+}
+
