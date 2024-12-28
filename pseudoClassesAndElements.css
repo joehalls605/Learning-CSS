@@ -1,0 +1,28 @@
+/* Pseudo-classes are used to define a special state of an element. They are like "conditions" you can apply to style an element when it’s in a specific state, such as when a user interacts with it. */
+
+/* :hover - styles an element when the user hovers their mouse over it. */
+
+button:hover {
+    background-color: blue;
+}
+
+/* :active styles an element when it's being clicked or activated. */
+
+button:active {
+    background-color: red;
+}
+
+/* Pseudo-elements are used to style specific parts of an element or to add content before or after it. They behave like creating a "virtual" element inside or around the real one. */
+
+/* Adds content before an elements actual content */ 
+h1::before {
+    content: "🎉 ";
+}
+
+/* Adds content aftet an elements actual content */
+
+h1::after {
+    content: " 🚀";
+}
+
+
