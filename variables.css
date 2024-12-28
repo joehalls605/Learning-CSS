@@ -1,0 +1,15 @@
+/*
+CSS variables (also known as custom properties) are a way to store values in CSS that you can reuse throughout your stylesheet. This makes it easier to maintain and update styles consistently.
+
+Define CSS variable by using -- followed by the name of the variable. It’s typically placed inside a selector, like :root (which targets the whole document), so the variable is accessible globally.
+*/
+
+:root{
+    --primary-color: #3498db;
+    --font-size: 16px;
+}
+
+body{
+    font-size: var(--font-size);
+    color: var(--primary-color);
+}
