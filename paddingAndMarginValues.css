@@ -1,0 +1,40 @@
+/* The shorthand for padding (and margin) in CSS is a way to specify space around an element (inside for padding, and outside for margin) in a concise manner. */
+
+/* ONE VALUE - If you specify only one value, it applies to all four sides: top, right, bottom, and left.   */
+
+body{
+    padding: 10px;
+}
+
+/* TWO VALUES - If you specify two values, the first value applies to the top and bottom.
+The second value applies to the left and right
+*/
+
+
+body{
+    padding: 14px 19px;
+}
+
+
+/* THREE VALUES - If you specify three values, they apply to:
+First value: Top
+Second value: Left and Right
+Third value: Bottom
+*/
+
+
+body{
+    padding: 1px 2px 3px;
+}
+
+/* FOUR VALUES - If you specify four values, they in this order
+Top
+Right
+Bottom
+Left
+*/
+
+
+body{
+    padding: 1px 2px 3px 4px;
+}
