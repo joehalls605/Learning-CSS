@@ -1,0 +1,24 @@
+/* @keyframes is used to create animations by defining a set of styles at specific points during the animation.
+I can then use the animation property to apply the keyframe animation to an element. */
+
+@keyframes changeColour {
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    animation: changeColour 2s infinite; /* Over 2 seconds it will change to aquamarine, and will repeat infinitely*/
+}
+

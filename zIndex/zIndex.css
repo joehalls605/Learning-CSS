@@ -1,9 +1,11 @@
 /*
-The z-index property in CSS is used to control the stacking order of elements on a web page. It only affects elements that have a position other than static (i.e., elements with position: relative, position: absolute, position: fixed, or position: sticky).
+The z-index property in CSS is used to control the stacking order of elements on a web page. 
+It only affects elements that have a position other than static:
+(i.e., elements with position: relative, position: absolute, position: fixed, or position: sticky).
 
 How z-index Works:
-
-The z-index value determines the order in which elements are stacked along the z-axis, which is perpendicular to the screen. Elements with higher z-index values are stacked on top of elements with lower z-index values.
+The z-index value determines the order in which elements are stacked along the z-axis, which is perpendicular to the screen. 
+Elements with higher z-index values are stacked on top of elements with lower z-index values.
 
 Values:
 auto (default): The stack level of the element is the same as its parent.
