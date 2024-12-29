@@ -1,0 +1,70 @@
+
+/* Grouping and combinators help you select multiple elements and create relationships between them.*/
+
+/* 
+<!-- HTML -->
+<div class="container">
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <span>Extra info</span>
+</div>
+*/
+
+/* Applying the same styles to multiple selectors*/
+h1, p{
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}
+
+/* > (Child combinator): selects direct children */
+
+.container > p{
+    font-size: 16px;
+}
+
+/* + (Adjacent sibling): Select the next immediate sibling*/
+
+h1 + p {
+    font-weight: bold;
+}
+
+/* (General sibling): select all siblings after the element */
+h1 ~ p {
+    text-decoration: underline;
+}
+
+/* :nth child() and nth-of-type()
+These select elements based on their position.
+
+
+HTML:
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Date</li>
+</ul>
+
+<div>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <span>Extra info</span>
+    <p>Third paragraph</p>
+</div>
+*/
+
+/* :nth-child(n) - makes the second <li> banana red*/
+
+li:nth-child(2){
+    color: red;
+}
+
+/* :nth-of-type(n) - highlights the second <p> in light blue*/
+p:nth-of-type(2){
+    background-color: lightblue;
+}
+
+
+
+
