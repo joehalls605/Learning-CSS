@@ -1,40 +1,79 @@
 /*
-CSS advanced selectors and combinators allow you to target elements in a precise way and style elements based on their attributes.
+CSS advanced selectors and combinators allow you to target elements in a precise way.
+And style elements based on their attributes.
 */
+
+/* These select elements based on their attributes or attribute values. */
 
 /* Selects all elements with the attribute "data-type" exactly equal to "example" */
 [data-type="example"] {
     background-color: yellow;
 }
 
+/*HTML: 
+<!-- HTML -->
+<input type="text" name="username" placeholder="Enter your name">
+<input type="password" name="password" placeholder="Enter your password">
+<input type="submit" value="Submit">
+*/
+
+/* [attr=value] - Exact match */
+input[type="text"]{
+  border: 2px solid blue;
+}
+
+/* [attr^=value] - Starts with */
+input[name^="user"]{
+  background-color: yellow;
+}
+
+/* [attr^=value] - Contains */
+input[name^="user"]{
+  border: 2px dashed red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Changes the color of a link when hovered */
 a:hover {
     color: red;
   }
   
-  /* Changes the background of an input when focused */
-  input:focus {
+/* Changes the background of an input when focused */
+input:focus {
     background-color: lightblue;
   }
   
-  /* Selects every second child element */
-  li:nth-child(2n) {
+/* Selects every second child element */
+li:nth-child(2n) {
     background-color: lightgray;
   }
   
-  /* Selects all paragraphs except the ones with class "special" */
-  p:not(.special) {
+/* Selects all paragraphs except the ones with class "special" */
+p:not(.special) {
     color: green;
   }
   
 
-  /* Adds a bullet before each paragraph */
+/* Adds a bullet before each paragraph */
 p::before {
     content: "• ";
     color: red;
   }
   
-  /* Adds a decorative line after each paragraph */
+/* Adds a decorative line after each paragraph */
   p::after {
     content: "";
     display: block;
@@ -44,23 +83,23 @@ p::before {
     margin-top: 10px;
   }
   
-  /* Selects all <span> elements inside <div> */
+/* Selects all <span> elements inside <div> */
 div span {
     color: blue;
   }
   
-  /* Selects all <p> elements that are direct children of <div> */
-  div > p {
+/* Selects all <p> elements that are direct children of <div> */
+div > p {
     font-weight: bold;
   }
   
-  /* Selects the <p> element that directly follows an <h1> */
+/* Selects the <p> element that directly follows an <h1> */
   h1 + p {
     margin-top: 0;
   }
   
-  /* Selects all <p> elements that follow an <h1> */
-  h1 ~ p {
+/* Selects all <p> elements that follow an <h1> */
+h1 ~ p {
     color: gray;
-  }
+}
   

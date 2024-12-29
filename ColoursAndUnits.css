@@ -32,6 +32,13 @@ HSLA (HSL with Alpha). Similar to RGBA, HSLA adds transparency.
 }
 
 /*
+When to use the above:
+For beginners: Stick with Hex for most simple needs and RGBA when transparency is required.
+For designers or advanced users: Use HSLA for flexible and intuitive adjustments.
+Dynamic coding: RGB or RGBA may be easier to work with in JavaScript or CSS preprocessors.
+*/
+
+/*
 Units of measurement
 
 Pixels - Fixed size relative to the screen. Commonly used for font sizes and dimensions. Always the same size, where ever it is defined. 

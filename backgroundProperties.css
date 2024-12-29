@@ -1,0 +1,38 @@
+div{
+    background-color: lightblue;
+}
+
+div{
+    background-image: url("hello.jpg");
+}
+
+/* 
+cover - the image will cover the whole element. Even if it means cropping.
+contain - the image will fit inside the element without but may leave gaps
+*/
+
+div{
+    background-image: url("hello.jpg");
+    background-size: cover;
+}
+
+/* 
+background-position: determines where the background image is placed inside the element.
+*/
+
+div {
+    background-image: url('example.jpg');
+    background-position: top right;
+    /* First value is horizontal, second value is vertical */
+    background-position: 80% 50%;
+}
+
+/* 
+Box shadow adds shadow arround the element
+*/
+
+div{
+    box-shadow: 5px 5px 10px gray;
+}
+
+
