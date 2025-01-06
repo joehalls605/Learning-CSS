@@ -59,6 +59,62 @@ h1 {
     text-align: center;
 }
 
+
+.combined-demo {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* Grid for overall card layout */
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* 
+    auto-fit automatically determines the number of columns that fit within the grid container
+    minmax(300px, 1fr) sets the minimum width of each column to 300px and allows them to grow to fill the available space
+    */
+    gap:20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* 
+    auto - the height of the first row automatically set by content inside it
+    1fr - the second row takes up 1 fraction of remaining space in container after rows are sized
+    auto - the height of the second row also determined by the content inside it
+    */
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-header img{
+  border-radius: 50%;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-content {
+    line-height: 1.5;
+}
+
 /* Responsive design */
 
 @media (max-width: 768px){
@@ -69,3 +125,23 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/* 
+Grid is handling the overall page structure - arranging the cards in a responsive grid pattern. 
+The auto-fit with minmax automatically adjusts how many cards fit in each row based on screen size.
+
+Each card internally uses Grid to create three distinct rows:
+
+Header (auto-sized to content)
+Content area (1fr to take remaining space)
+Footer (auto-sized to content)
+
+Flexbox handles the horizontal alignment of the avatar and user info, making it easy to:
+
+Center items vertically (align-items: center)
+Create consistent spacing between elements (gap)
+
+Grid for the "big picture" layout - creating the overall structure and sections of your page or component
+Flexbox for the "inner" alignments - positioning content within those sections
+*/
