@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    /* 
+    auto-fill dynamically fills the grid with as many columns as will fit into the container
+    minmax() each column must be at least 300 pixels wide
+    1fr max size, each column can grow to only take up any remaining free space
+
+    so this means:
+    If the container is wide enough, multiple columns of at least 300px wide will be created.
+    If there is extra space, the columns expand proportionally to fill it.
+    If the container is too narrow to fit all columns at 300px, some columns will wrap to the next row.
+    */
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 
+The .grid-container uses CSS Grid to create a responsive layout for the items. It automatically adjusts the number of columns based on the screen size (grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));).
+Flexbox:
+
+The header and footer are created using Flexbox. The .header uses display: flex to create a horizontal navigation bar and a logo section that are spaced out using justify-content: space-between.
+*/
+
+
+
+

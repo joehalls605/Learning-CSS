@@ -20,7 +20,8 @@ The element will not start on a new line and only takes up as much width as nece
 /*
 display: inline-block;
 
-The element will not start on a new line, but you can set width and height. It combines features of both block and inline elements.
+The element will not start on a new line, but you can set width and height. 
+It combines features of both block and inline elements.
 */
 .inline-block-element {
     display: inline-block;
